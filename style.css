@@ -2,29 +2,36 @@
 	text-align: center;
 }
 
-@-webkit-keyframes move {
-	from {
-	position:relative;
-	top: 20px;
-	left:100px;
-	}
-
-to {
-	position: relative;
-	top: 100px;
-	left: 50px;
-	}
+#animate {
+	width: 100px;
 }
-
-#move {
+	
+/*@keyframes move {
+  from {
+    position: relative;
+    top: 50px;
+    }
+    to {
+    position: 100px;
+    }
+*/
+.move {
 	margin: auto;
 	padding: auto;
 	position: relative;
-	animation: move 4s;
+	-webkit-animation: move 1s infinite alternate;
+	width: 100px;
+	height: 70px;
     
 }
 
-#animate {
-	width: 100px;
-	}
 	
+@-webkit-keyframes move {
+    from {
+    position: absolute;
+    top: 50px;
+    }
+    to {
+    position: 100px;
+    }
+}
