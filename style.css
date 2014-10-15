@@ -1,37 +1,58 @@
 * {
 	text-align: center;
+	width: 100%;
 }
 
 #animate {
 	width: 100px;
 }
-	
-/*@keyframes move {
-  from {
-    position: relative;
+
+@-webkit-keyframes move {
+    from {
     top: 50px;
     }
     to {
-    position: 100px;
+    top: 100px;
     }
-*/
+}
+	
+@keyframes move {
+	from {
+    top: 50px;
+    }
+	to {
+    top: 100px;
+    }
+}
+
 .move {
 	margin: auto;
 	padding: auto;
 	position: relative;
 	-webkit-animation: move 1s infinite alternate;
+	animation: move 1s infinite alternate;
 	width: 100px;
-	height: 70px;
+	height: 10px;
     
 }
 
+/* Desktop */
+@media screen and (min-width: 500px) {
+
+* {
+	text-align: center;
+	width: 660px;
+	margin: auto;
+	padding: auto;
 	
-@-webkit-keyframes move {
-    from {
-    position: absolute;
-    top: 50px;
-    }
-    to {
-    position: 100px;
-    }
 }
+
+#gif {
+	position: absolute;
+	top: 200px;
+
+}
+
+}
+
+
