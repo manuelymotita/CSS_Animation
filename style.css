@@ -1,0 +1,30 @@
+* {
+	text-align: center;
+}
+
+@-webkit-keyframes move {
+	from {
+	position:relative;
+	top: 20px;
+	left:100px;
+	}
+
+to {
+	position: relative;
+	top: 100px;
+	left: 50px;
+	}
+}
+
+#move {
+	margin: auto;
+	padding: auto;
+	position: relative;
+	animation: move 4s;
+    
+}
+
+#animate {
+	width: 100px;
+	}
+	
